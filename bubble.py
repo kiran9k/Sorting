@@ -12,7 +12,7 @@ def insert_elements():
 
 def bubble(a):
     N=len(a)
-    for i in range(0,N):
+    for i in range(0,N-1):
         for j in  range(0 ,N-i-1):
             if (a[j]>a[j+1]):
                 t=a[j]
