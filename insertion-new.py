@@ -12,22 +12,16 @@ def insert_elements():
 
 def insertion(a):
     N=len(a)
-    for i in range(N):
+    for i in range(N-1):
         min=i
         for j in  range(i,N):
             if (a[j]<a[min]):
                 min=j
-
-        print a[min]
         temp=a[min]
         
         for k in range(min,i,-1):
             a[k]=a[k-1]
-        a[i]=temp    
-        
-        
-        print a
-            
+        a[i]=temp             
             
     return a
 
